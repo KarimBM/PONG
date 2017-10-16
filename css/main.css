@@ -1,0 +1,177 @@
+/*__________________________________GENERAL_____________________________*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../image/space.jpg);
+}
+
+main {
+    margin: 2rem;
+    width: 100%;
+    text-align: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap ;*/
+    /*justify-content: space-around;*/
+    /*align-items: flex-start;*/
+}
+/*______________________________HEADER________________________________*/
+header {
+    text-align: center;
+	margin-bottom: 2rem;
+}
+
+h1{
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-weight: normal;
+	font-size: 4rem;
+    margin-bottom: 1rem;
+}
+span{
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    margin: 3rem;
+    color: white;
+}
+.fa {
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1rem;
+    color: white;
+    margin-right: 2px;
+}
+
+
+.container {
+    margin-top: 2rem;
+}
+
+button{
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: #008740;
+}
+li>button{
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: #008740;
+}
+
+
+#canvas {
+    /*box-shadow: 1rem 1rem 1rem 1rem #c0c0c0;*/
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    background-color: black;
+    background-image: url(../image/rond.jpg);
+    background-position: center;
+    background-size: cover;
+    /*border-bottom: 5px #008740 solid;*/
+    /*border-top: 5px #008740 solid;*/
+
+}
+/* _____________________________ ANIMATION _______________________*/
+
+.container>i{
+    font-size: 6rem;
+    color: white;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes mymove {
+    from {left: -60px;}
+    to {left: 1300px;}
+}
+/*____________________________COSMOS___________________________*/
+
+
+/*________________________ SLIDER ___________________________*/
+
+a
+{
+    color: white;
+    font-size:  3rem;
+    text-decoration: none;
+    transition: text-shadow 0.25s;
+}
+a:hover
+{
+    text-shadow: 0 0 4px grey;
+}
+
+
+
+h1
+{
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+header
+{
+    padding-bottom: 2em;
+}
+
+
+.hide
+{
+    display: none;
+}
+
+.slider
+{
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    /*transform: rotate(-3deg);
+    transform-origin: 50% 50%;*/
+}
+.slider figcaption {
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    padding: 2.4rem;
+
+}
+.slider img
+{
+    width: 50rem;
+    height: 30rem;
+    background-color: transparent;
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 0 8px black;
+}
+.toolbar {
+
+}
+.toolbar ul
+{
+    /* structure */
+    padding-left: 0;
+
+    /* presentation */
+    list-style-type: none;
+    text-align: center;
+}
+.toolbar ul li
+{
+    display: inline-block;
+}
+.toolbar ul li + li
+{
+    margin-left: 1em;
+}

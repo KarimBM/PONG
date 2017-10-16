@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Space Pong</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Librairie jQuery -->
+        <script src="js/utilities.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- Fonctions du projet -->
+        <script src="js/classes/Ball.class.js"></script>
+        <script src="js/classes/Board.class.js"></script>
+        <script src="js/classes/Player.class.js"></script>
+        <script src="js/classes/Game.class.js"></script>
+    </head>
+    <body>
+        <section class="container">
+            <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+        </section>
+
+        <header>
+            <h1>
+                <i class="fa fa-space-shuttle fa-rotate-270" aria-hidden="true"></i>
+                SPACE PONG
+                <i class="fa fa-space-shuttle fa-rotate-270" aria-hidden="true"></i>
+            </h1>
+
+
+
+        </header>
+        <main>
+
+            <section>
+                <button class="button button-toolbar" id="start_game"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button class="button button-toolbar" id="pause_game"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                <button class="button button-toolbar" id="stop_game" ><i class="fa fa-stop" aria-hidden="true"></i></button>
+
+                <div>
+                    <span><i class="fa fa-user-circle-o" aria-hidden="true"></i>Joueur 1</span>
+                    <span>Joueur 2<i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                </div>
+
+                <div>
+                    <span><i class="fa fa-user-circle-o" aria-hidden="true"></i>0</span>
+                    <span>0<i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                </div>
+
+                <canvas id="canvas" width="500" height="300" ></canvas>
+            </section>
+            <section>
+                <nav class="toolbar">
+                    <a id="toolbar-toggle" href="#"><i class="fa fa-space-shuttle "></i> </a>
+                    <ul class="hide">
+                        <li><button id="slider-previous" title="Image précédente"><i class="fa fa-backward"></i></button></li>
+                        <li><button id="slider-toggle" title="Démarrer le carrousel"><i class="fa fa-play"></i></button></li>
+                        <li><button id="slider-next" title="Image suivante"><i class="fa fa-forward"></i></button></li>
+                        <li><button id="slider-random" title="Sélectionner une image aléatoire"><i class="fa fa-random"></i></button></li>
+                    </ul>
+                </nav>
+
+
+            <figure id="slider" class="slider">
+                <figcaption></figcaption>
+                <img src="" alt="Photos">
+            </figure>
+            </section>
+            </main>
+        <script src="js/slider.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
